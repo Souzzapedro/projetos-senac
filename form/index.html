@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-github"
+                viewBox="0 0 16 16">
+                <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+            </svg>
+            <div id="div-text">
+                <div id="follow">
+                    <p id="subtitulo">A Pen by freeCodeCamp.org</p>
+                    <a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+                            </svg></span>
+                        <p>Follow</p>
+                    </a>
+                </div>
+                <p>FCC:Survey Form</p>
+            </div>
+        </div>
+        <div class="botoes">
+            <a href="#" id="like">
+                <svg id="coracao" xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                    class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                </svg>
+            </a>
+            <a href="#" id="view-source-code"><span>View Source Code</span></a>
+            <a href="#" id="sign-up">Sign Up</a>
+            <a href="#" id="log-in">Log In</a>
+            <a href="#" id="btn-burguer">
+                <svg id="burguer" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <section id="title">
+        <h1>freeCodeCamp Survey Form</h1>
+        <h2>Thank you for taking the time to help us improve the platform</h2>
+    </section>
+
+    <section id="formulario">
+        <form action="">
+            <p>Nome</p>
+            <input type="text" name="name" placeholder="Nome" required>
+            <p>Email</p>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <p>Age (optional)</p>
+            <input type="number" name="age" placeholder="Idade" required>
+
+            <p>Which option best describes your current role?</p>
+            <select name="current" id="current">
+                <option id="exemplo" value="selectCurrentRole">Select Current Role</option>
+                <option value="student">Student</option>
+                <option value="fullTimeJob">Full Time Job</option>
+                <option value="fullTimeLeaner">Full Time Leaner</option>
+                <option value="preferNotToSay">Prefer Not To Say</option>
+                <option value="other">Other</option>
+            </select>
+
+            <div class="form-group">
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio"
+                        checked />Definitely</label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
+
+                <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+            </div>
+
+
+
+            <p>Any comments or suggestions?</p>
+            <textarea name="comments" id="comments" cols="30" rows="5" placeholder="Enter your comment"></textarea>
+
+            <button id="submit" type="submit">Submit</button>
+
+        </form>
+    </section>
+
+</body>
+
+</html>

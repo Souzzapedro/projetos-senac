@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    cursor: default;
+}
+
+a,
+button,
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    cursor: text;
+}
+
+body {
+    background-image: url(/images/fundo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#fundo {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    height: 65px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+}
+
+
+
+/* LOGO NAVEGAÇÃO */
+.logo {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 19.5px;
+    font-weight: bold;
+    left: 10px;
+}
+
+#subtitulo {
+    font-weight: 400;
+    color: #9b9dad;
+    font-size: 13.5px;
+    margin-bottom: -10px;
+    line-height: 15px;
+}
+
+.logo #div-text {
+    margin-left: 7px;
+    padding: 0;
+}
+
+#follow {
+    display: flex;
+    align-items: center;
+}
+
+#follow a {
+    background-color: #47cf73;
+    color: #000;
+    font-size: 10.5px;
+    padding: 0 4px 0 2px;
+}
+
+#follow span {
+    margin-top: 2px;
+}
+
+
+
+
+/* BOTÕES NAVEGAÇÃO */
+
+.botoes {
+    display: flex;
+}
+
+nav a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #444857;
+    padding: 0px 20px;
+    border-radius: 4px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    transition: .5s ease;
+}
+
+nav a:hover {
+    background-color: #7a7e8d;
+}
+
+#like {
+    padding: 0 17px;
+    transition: 1s ease-in-out;
+    transition: background-color 0.2s ease-in;
+}
+
+#like svg {
+    width: 15px;
+    height: 15px;
+    color: #fff;
+    transition: all 1s;
+}
+
+#like:hover #coracao {
+    width: 30px;
+    height: 30px;
+    color: red;
+}
+
+#like:hover {
+    background-color: #000;
+}
+
+#sign-up {
+    color: #000;
+    background-color: #47cf73;
+    transition: 1s ease-in-out;
+    width: 7rem;
+}
+
+#sign-up:hover {
+    background-color: #248C46;
+    color: #fff;
+    width: 10rem;
+}
+
+#btn-burguer {
+    color: #fff;
+    padding: 0 8px;
+    display: none;
+}
+
+#btn-burguer #burguer {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+/* TEXTO TITULO */
+#title {
+    width: 700px;
+    margin: 13vh auto 2vh auto;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+#title h1 {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+#title h2 {
+    font-weight: 300;
+    font-size: 20px;
+    font-style: italic;
+    word-spacing: 2.5px;
+}
+
+
+/*  FOMULARIO */
+#formulario {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 700px;
+    margin: 0 auto;
+    border-radius: 5px;
+    color: #fff;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+
+#formulario p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+
+#formulario input[type="text"],
+#formulario input[type="email"],
+#formulario input[type="number"],
+select,
+textarea {
+    width: 100%;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+#exemplo {
+    color: #9b9dad;
+}
+
+
+
+
+
+
+/* BUTTOM RADIO AREA */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.form-group input {
+    width: 18px;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+textarea {
+    border: none;
+}
+
+#submit {
+    color: #fff;
+    padding: 10px auto;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    background-color: #47cf73;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+@media (max-width: 900px) {
+    #title {
+        width: 70vw;
+    }
+
+    #formulario {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 810px) {
+    #like,
+    #view-source-code,
+    #sign-up,
+    #log-in
+    {
+        display: none;
+    }
+
+    #btn-burguer {
+        display: flex;
+    }
+}
+
+@media (max-width: 700px) {
+    #formulario {
+        width: 85vw;
+    }
+}
+
+@media (max-width: 450px) {
+
+#title h1 {
+    font-size: 29px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+#title h2 {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#formulario p {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+#formulario input[type="text"],
+#formulario input[type="email"],
+#formulario input[type="number"],
+#formulario select,
+#formulario textarea {
+    width: 100%;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+#formulario {
+    padding: 20px;
+}
+}
